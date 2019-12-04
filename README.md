@@ -1,0 +1,2 @@
+# pigen
+Generates progressive images
