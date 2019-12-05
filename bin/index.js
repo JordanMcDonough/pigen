@@ -54,7 +54,7 @@ try {
 
   if (srcStat.isDirectory()) {
     //Normalise the glob
-    srcGlob = _path["default"].resolve(srcGlob) + "\\**\\*.png";
+    srcGlob = _path["default"].resolve(srcGlob) + "\\**\\*.{png,jpg,jpeg,gif,webp}";
     processingFile = false;
   } else if (srcStat.isFile()) {
     processingFile = true;

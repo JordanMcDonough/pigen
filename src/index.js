@@ -45,7 +45,7 @@ try{
     let srcStat = fs.lstatSync(srcGlob);
     if(srcStat.isDirectory()){
         //Normalise the glob
-        srcGlob = path.resolve(srcGlob) + "\\**\\*.png";
+        srcGlob = path.resolve(srcGlob) + "\\**\\*.{png,jpg,jpeg,gif,webp}";
         processingFile = false;
     }else if(srcStat.isFile()){
         processingFile = true;
