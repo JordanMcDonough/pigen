@@ -1,10 +1,12 @@
 {
-  "name": "pigen",
+  "name": "progressive-image-generator",
   "version": "1.0.0",
   "description": "Generates progressive images",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel src -D -d bin",
+    "dev": "npx babel src -D -d bin --watch"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +17,23 @@
   "bugs": {
     "url": "https://github.com/JordanMcDonough/pigen/issues"
   },
-  "homepage": "https://github.com/JordanMcDonough/pigen#readme"
+  "homepage": "https://github.com/JordanMcDonough/pigen#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-node": "0.0.1-security",
+    "eslint": "^6.7.2",
+    "glob": "^7.1.6",
+    "nodemon": "^2.0.1"
+  },
+  "bin": {
+    "pigen": "bin/index.js"
+  },
+  "dependencies": {
+    "commander": "^4.0.1",
+    "glob-parent": "^5.1.0",
+    "sharp": "^0.23.3"
+  }
 }
