@@ -1,0 +1,19 @@
+{
+  "name": "pigen",
+  "version": "1.0.0",
+  "description": "Generates progressive images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanMcDonough/pigen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JordanMcDonough/pigen/issues"
+  },
+  "homepage": "https://github.com/JordanMcDonough/pigen#readme"
+}
